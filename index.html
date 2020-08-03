@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Currency Converter</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center my-5">
+                    <h1 class="heading display-5 pb-3">Currency Converter</h1>
+
+                    <form id="currency-form">
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/us.gif">
+                                        USD $
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="usd" placeholder="US dollar">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/au.gif">
+                                        AUD $
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="aud"
+                                    placeholder="Australian dollar">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/ca.gif">
+                                        CAD $
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="cad"
+                                    placeholder="Canadian dollar">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/nz.gif">
+                                        NZD $
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="nzd"
+                                    placeholder="New Zealand dollar">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/sg.gif">
+                                        SGD $
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="sgd"
+                                    placeholder="Singapore dollar">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img
+                                            src="https://cdn10.bigcommerce.com/s-hhbbk/products/358/images/36684/EUUN0001__37558.1580475771.1280.1280.png?c=2">
+                                        EUR €
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="eur" placeholder="Euro">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/gb.gif">
+                                        GBP £
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="gbp"
+                                    placeholder="Great britain pound">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/640px-Flag_of_Japan.svg.png">
+                                        JPY ¥
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="jpy"
+                                    placeholder="Japanese yen">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/cn.gif">
+                                        CNH ¥
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="cnh"
+                                    placeholder="Chinese yuan renminbi">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/in.gif">
+                                        INR ₹
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="inr"
+                                    placeholder="Indian rupee">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img
+                                            src="https://images-na.ssl-images-amazon.com/images/I/51f0RPeH5wL._AC_SX466_.jpg">
+                                        CHF Fr
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="chf"
+                                    placeholder="Swiss franc">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/se.gif">
+                                        SEK kr
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="sek"
+                                    placeholder="Swedish krona">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <img src="https://www.geonames.org/flags/l/my.gif">
+                                        MYR rm
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" class="form-control" id="myr"
+                                    placeholder="Malaysian Ringgit">
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <button class="btn btn-dark" id="clear-btn">CLEAR</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
